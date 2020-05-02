@@ -11,9 +11,6 @@
  */
 class Solution {
 public:
-    bool leaf(TreeNode* root){
-        return !(root->left && root->right)
-    }
     bool dfs(TreeNode* root, vector<int>& arr,int idx = 0){
         if (!root || root->val != arr[idx])
             return false;
